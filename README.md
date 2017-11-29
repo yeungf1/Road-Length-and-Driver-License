@@ -51,3 +51,11 @@ Licensed Drivers: 2009- https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/file
 
 2000 to 2010 Population and Area Change by 2010 Urbanized Area
 https://www.census.gov/geo/reference/ua/ualists_layout.html
+
+
+Problems Encountered
+
+Solutions
+
+Guideline for getting our work
+See Notebook and FinalProject.py
