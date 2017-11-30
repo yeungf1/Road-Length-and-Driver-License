@@ -62,4 +62,5 @@ We first tried to plot the total public road length against the year for each st
 After creating a new column 'State' in the PopAreaChngeUA.csv file, we find that many cities have more than one state name indicated (e.g. St. Louis, MO--IL. Cincinnati, OH--KY--IN).Therefore to groupby 'State' for all cities was not possible. We've  decided to drop those cities with multiple states indicated, groupby and summed the rest and concluded on trend.  
 
 Guideline for getting our work
+
 See commands in FinalProject.py
