@@ -53,9 +53,13 @@ Licensed Drivers: 2009- https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/file
 https://www.census.gov/geo/reference/ua/ualists_layout.html
 
 
-Problems Encountered
+Problems Encountered and Solutions
 
-Solutions
+1. Regarding visualization:
+We first tried to plot the total public road length against the year for each state in a single graph. However, as the year, for example 2005, occurs multiple times in the CSV file and thus we are not able to create a unique index for year. Therefore, we decide to select the Top 5 states (Ranked by the land size and population) as a subset of the original dataframe, which includes Alaska, California, Texas, New York and Florida. Besides, Virginia, which has relatively small population, is also included for the reason of comparison. The same applies when we plot the drivers per 1000 residents.
+
+2. Regarding the file "2000 to 2010 Population and Area Change by 2010 Urbanized Area":
+After creating a new column 'State' in the PopAreaChngeUA.csv file, we find that many cities have more than one state name indicated (e.g. St. Louis, MO--IL. Cincinnati, OH--KY--IN).Therefore to groupby 'State' for all cities was not possible. We've  decided to drop those cities with multiple states indicated, groupby and summed the rest and concluded on trend.  
 
 Guideline for getting our work
-See Notebook and FinalProject.py
+See commands in FinalProject.py
