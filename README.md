@@ -66,11 +66,17 @@ Conclusion
 From 2000 to 2010 Population and Area Change by 2010 Urbanized Area we get for the six states the following: 
 
 State        Population Change in Urban Area From 2000 To 2010      Land Area Change In Urban Area From 2000 To 2010 (SquareMiles)
+
 CA                 3271887                                                     692.51 
+
 NY                   80764                                                     118.94
+
 AK                   38086                                                      18.14
+
 TX                 4032300                                                    1688.02
+
 FL                 2831821                                                    1207.23
+
 VA                  345713                                                     114.92
 
 All show increase in population in urban area and growth in urban land area (by various extend). 
