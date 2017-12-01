@@ -59,8 +59,32 @@ Problems Encountered and Solutions
 We first tried to plot the total public road length against the year for each state in a single graph. However, as the year, for example 2005, occurs multiple times in the CSV file and thus we are not able to create a unique index for year. Therefore, we decide to select the Top 5 states (Ranked by the land size and population) as a subset of the original dataframe, which includes Alaska, California, Texas, New York and Florida. Besides, Virginia, which has relatively small population, is also included for the reason of comparison. The same applies when we plot the drivers per 1000 residents.
 
 2. Regarding the file "2000 to 2010 Population and Area Change by 2010 Urbanized Area":
-After creating a new column 'State' in the PopAreaChngeUA.csv file, we find that many cities have more than one state name indicated (e.g. St. Louis, MO--IL. Cincinnati, OH--KY--IN).Therefore to groupby 'State' for all cities was not possible. We've  decided to drop those cities with multiple states indicated, groupby and summed the rest and concluded on trend.  
+After creating a new column 'State' in the PopAreaChngeUA.csv file, we find that many cities have more than one state name indicated (e.g. St. Louis, MO--IL. Cincinnati, OH--KY--IN).Therefore to groupby 'State' for all cities was not possible. We've  decided to drop those cities with multiple states indicated, groupby and summed the rest and concluded on trend.
 
-Guideline for getting our work
+Conclusion
 
-See commands in FinalProject.py
+From 2000 to 2010 Population and Area Change by 2010 Urbanized Area we get for the six states the following: 
+
+State        Population Change in Urban Area From 2000 To 2010      Land Area Change In Urban Area From 2000 To 2010 (SquareMiles)
+CA                 3271887                                                     692.51 
+NY                   80764                                                     118.94
+AK                   38086                                                      18.14
+TX                 4032300                                                    1688.02
+FL                 2831821                                                    1207.23
+VA                  345713                                                     114.92
+
+All show increase in population in urban area and growth in urban land area (by various extend). 
+
+For the six states we’ve chosen, the first observation is that the total public road length for each of them from year 2005 to 2006 have sharply increased by several times. However, after 2006, the overall public road length only steadily increased by a small amount. This is partly driven by the fact that the land area change in urban area have an overall trend of increase from 2000 to 2010. 
+
+Second, we find the number of licensed drivers have increased for all sample states from 2005 to 2009, which however is closely related to the change in resident population. Therefore, the ratio of licensed drivers to overall resident population is expected to stay relatively stable. This is proved by the measure of licensed drivers per 1000 residents population, which has insignificant changes over the five year period. 
+
+Even in 2006 when the total public road length for each of the six states have increased significantly from the previous year, we do not observe a big change in licensed drivers per 1000 resident population. And for Texas and California, the absolute level of licensed drivers even slightly decreased. Furthermore, the direction of changes in licensed drivers does not follow the one in total public road length over the five years. 
+
+From this project we know that the total public road length is positively correlated to the total urban land area in each state and that the total number of driver licenses depends largely on the overall residents population. Although there might be correlation between change in population and the total urban land area (i.e. population growth might leads to increase in urban area in a particular state), total public road length for a particular state does not necessarily correlate with the number of licensed drivers. 
+
+Overall, we conclude that the total public road length might not have an impact on the number of licensed drivers. In other words, the sum of available public road in a state is not considered as an important factor in people’s decision-making when applying for their driver licenses.
+
+
+
+See commands in FinalProject.py for guidelines of our work
