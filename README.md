@@ -64,7 +64,7 @@ After creating a new column 'State' in the PopAreaChngeUA.csv file, we find that
 Conclusion
 
 From 2000 to 2010 Population and Area Change by 2010 Urbanized Area we get for the six states the following: 
-
+ 
 State        Population Change in Urban Area From 2000 To 2010      Land Area Change In Urban Area From 2000 To 2010 (SquareMiles)
 
 CA                 3271887                                                     692.51 
