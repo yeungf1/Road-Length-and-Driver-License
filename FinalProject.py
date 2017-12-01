@@ -93,7 +93,7 @@ merged=pd.concat([f1,f2,f3,f4,f5],axis=0)
 merged.to_csv("Output.csv", index=False)
 
 #add to the csv file a column of 'Year' (from 2005-2009)
-#run a loop and plot the trend from 2005-2009, two graphs, each show changes in total public road length,  drivers per 1000 total resident population as number of drivers must be closely related to overall amount of resident population
+#plot the trend from 2005-2009, two graphs per state, each show changes in total public road length,  drivers per 1000 total resident population as number of drivers must be closely related to overall amount of resident population
 #for CA NY AK TX FL VA
 import pandas as pd
 import numpy as np
@@ -159,8 +159,6 @@ ax11 = df.loc[df.State=="Virginia", ["Drivers per 1,000 total resident populatio
 ax11.set_ylabel("Drivers per 1,000 total resident population")
 ax11.set_xlabel("Year")
 ax11.get_figure().savefig('VA_LD.pdf')
-
-
 
 #rearrange and group the columns by state 2000 to 2010 Population and Area Change by 2010 Urbanized Area
 #First make a new column in the csv file 'State'
